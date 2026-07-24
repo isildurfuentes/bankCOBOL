@@ -1,0 +1,7 @@
+      * COPY ARCHIVO TIPOS MOVIMIENTOS.
+       FD  TIPO-MOVIMIENTO.
+       01 REG-TIPO-MOVIMIENTO.
+        03 ID-TIPO-MOV       PIC 99.
+        03 DESC-TIPO-MOV     PIC X(35).
+        03 SIGNO-TIPO-MOV    PIC X.
+        
