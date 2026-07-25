@@ -1,0 +1,14 @@
+id,descripcion,signo,importeMinimo
+1,"Transferencia con signo",A,NULL
+2,"Bizum con signo",A,NULL
+3,"Tarjeta débito",N,NULL
+4,"Operación cajero con signo",A,NULL
+5,"Depósito efectivo",P,NULL
+6,"Retiro efectivo",N,NULL
+8,"Plazo fijo con signo",A,NULL
+9,"Intereses plazo fijo",P,NULL
+10,"Crédito por ingreso",P,NULL
+11,"Cuota crédito",N,NULL
+12,"Ingreso hipoteca",P,NULL
+13,"Pago hipoteca",N,NULL
+14,"Ingreso alta cuenta",P,1000
