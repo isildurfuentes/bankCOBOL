@@ -2,7 +2,7 @@ CREATE TABLE `cuentasCorrientes` (
   `idCliente` int NOT NULL,
   `idTipoMovimiento` int NOT NULL,
   `fechaMovimiento` date NOT NULL,
-  `idMovimiento` int NOT NULL,
+  `idMovimiento` int NOT NULL AUTO_INCREMENT,
   `importe` decimal(10,0) NOT NULL,
   `comentario` varchar(45) DEFAULT NULL,
   `saldoActual` date NOT NULL,
