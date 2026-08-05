@@ -1,7 +1,7 @@
 CREATE TABLE `cliente` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `tipoDocumento` varchar(1) NOT NULL,
-  `letraDocumento` varchar(1) NOT NULL,
+  `letraDni` varchar(1) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `fechaAlta` date NOT NULL,
   `nombre` varchar(25) NOT NULL,
   `apellidos` varchar(25) NOT NULL,
@@ -13,5 +13,8 @@ CREATE TABLE `cliente` (
   `tienePlazoFijo` int NOT NULL,
   `tieneCredito` int NOT NULL,
   `tieneHipoteca` int NOT NULL,
-  PRIMARY KEY (`id`)
+  `numeroDocumento` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `cliente_tiposDocumento_FK` (`tipoDocumento`),
+  CONSTRAINT `cliente_tiposDocumento_FK` FOREIGN KEY (`tipoDocumento`) REFERENCES `tiposDocumento` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
