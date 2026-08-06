@@ -2,7 +2,7 @@ CREATE TABLE `clientes` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `tipoDocumento` varchar(1) NOT NULL,
   `letraDni` varchar(1) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `fechaAlta` date NOT NULL,
+  `fechaAlta` date NOT NULL DEFAULT (curdate()),
   `nombre` varchar(25) NOT NULL,
   `apellidos` varchar(25) NOT NULL,
   `direccion` varchar(45) NOT NULL,

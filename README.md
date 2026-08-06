@@ -22,16 +22,16 @@ Los siguientes pasos deben ejecutarse, en el orden indicado, para el correcto fu
 
 Este ejercicio se basa en la utilización del precompilador [gixsql](https://github.com/mridoni/gixsql).
 
-Pasos efectuados:
+Importante. Para el uso de gixsql, se ha hecho con la siguiente base:
 
-- Instalado Ubuntu 20.04.6
+- Ubuntu 20.04.6
 - Instalado .deb de gixsql para Ubuntu 20.04
 
 **Comandos utilizados:**
 
 gixpp -e -S -p -z a --picx-as varchar -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/tipos -E ".cpy" -i bankCOBOL.cbl -o bankCOBOL.cbsql
 
-cobc -x -I/usr/share/gixsql/copy -I./fuentes/sql bankCOBOL.cbsql -L /usr/lib -lgixsql
+cobc -x -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/interface bankCOBOL.cbsql -L /usr/lib -lgixsql
 
 
 
