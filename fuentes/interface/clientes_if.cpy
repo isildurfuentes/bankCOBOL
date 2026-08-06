@@ -1,3 +1,4 @@
+       INTRODUCE-DATOS-CLIENTE.
            DISPLAY "Tipo de documento: "
            ACCEPT TIPO-DOC
            DISPLAY "Número documento: "
@@ -19,4 +20,4 @@
            MOVE 0 TO TARJETA
            MOVE 0 TO PLAZOF
            MOVE 0 TO CREDITO
-           MOVE 0 TO HIPOTECA
+           MOVE 0 TO HIPOTECA.
