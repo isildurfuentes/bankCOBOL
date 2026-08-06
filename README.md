@@ -16,5 +16,23 @@ Los siguientes pasos deben ejecutarse, en el orden indicado, para el correcto fu
 4. Crear tabla cuentasCorrientes (cuentasCorrientes.sql)
 5. Insertar los datos de tiposMovimiento (tiposMovimiento_data.csv)
 
+# Compilación
+
+Este ejercicio se basa en la utilización del precompilador gixsql.
+
+Pasos efectuados:
+
+- Instalado Ubuntu 20.04.6
+- Instalado .deb de gixsql para Ubuntu 20.04
+
+**Comandos utilizados:**
+
+gixpp -e -S -p -z a -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/tipos -E ".cpy" -i bankCOBOL.cbl -o bankCOBOL.cbsql
+
+cobc -x -I/usr/share/gixsql/copy -I./fuentes/sql bankCOBOL.cbsql -L /usr/lib -lgixsql
+
+
+
+
 
 
