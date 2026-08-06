@@ -14,11 +14,13 @@ Los siguientes pasos deben ejecutarse, en el orden indicado, para el correcto fu
 2. Crear tabla tiposMovimiento (tiposMovimiento.sql)
 3. Crear tabla clientes (clientes.sql)
 4. Crear tabla cuentasCorrientes (cuentasCorrientes.sql)
-5. Insertar los datos de tiposMovimiento (tiposMovimiento_data.csv)
+5. Crear vista clientesTiposDocumento (clientesTiposDocumento.sql)
+6. Importar los datos de tiposMovimiento (tiposMovimiento_data.csv)
+7. Importar los datos de tiposDocumento (tiposDocumento_data.csv)
 
 # Compilación
 
-Este ejercicio se basa en la utilización del precompilador gixsql.
+Este ejercicio se basa en la utilización del precompilador [gixsql](https://github.com/mridoni/gixsql).
 
 Pasos efectuados:
 
