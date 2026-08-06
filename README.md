@@ -27,7 +27,7 @@ Pasos efectuados:
 
 **Comandos utilizados:**
 
-gixpp -e -S -p -z a -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/tipos -E ".cpy" -i bankCOBOL.cbl -o bankCOBOL.cbsql
+gixpp -e -S -p -z a --picx-as varchar -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/tipos -E ".cpy" -i bankCOBOL.cbl -o bankCOBOL.cbsql
 
 cobc -x -I/usr/share/gixsql/copy -I./fuentes/sql bankCOBOL.cbsql -L /usr/lib -lgixsql
 

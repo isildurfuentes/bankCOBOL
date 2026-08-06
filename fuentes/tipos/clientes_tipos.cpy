@@ -1,15 +1,11 @@
       * COPY ARCHIVO CLIENTES.
-       FD  CLIENTE.
        01 REG-CUENTA.
         03 ID-CLIENTE            PIC 9(20).
         03 DOC-CLIENTE.
             05 TIPO-DOC          PIC X.
             05 NUMERO-DOC        PIC X(20).
             05 LETRA-DNI         PIC X.
-        03 FECHA-ALTA-CLIENTE.
-            05 ANIO-ALTA-CLIENTE PIC 9(4).
-            05 MES-ALTA-CLIENTE  PIC 9(2).
-            05 DIA-ALTA-CLIENTE  PIC 9(2).
+        03 FECHA-ALTA-CLIENTE    PIC X(8).
         03 NOMBRE-CLIENTE        PIC X(25).
         03 APELLIDOS-CLIENTE     PIC X(25).
         03 DIRECCION-CLIENTE     PIC X(45).
