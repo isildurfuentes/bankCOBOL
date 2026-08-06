@@ -5,6 +5,6 @@ CREATE TABLE `cuentasClientes` (
   `fechaBaja` date DEFAULT NULL,
   PRIMARY KEY (`idCuentaCorriente`,`idCliente`),
   KEY `cuentasClientes_cliente_FK` (`idCliente`),
-  CONSTRAINT `cuentasClientes_cliente_FK` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `cuentasClientes_cliente_FK` FOREIGN KEY (`idCliente`) REFERENCES `clientes` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `cuentasClientes_cuentasCorrientes_FK` FOREIGN KEY (`idCuentaCorriente`) REFERENCES `cuentasCorrientes` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
