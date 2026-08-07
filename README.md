@@ -31,7 +31,7 @@ Importante. Para el uso de gixsql, se ha hecho con la siguiente base:
 
 gixpp -e -S -p -z a --picx-as varchar -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/tipos -E ".cpy" -i bankCOBOL.cbl -o bankCOBOL.cbsql
 
-cobc -x -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/interface bankCOBOL.cbsql -L /usr/lib -lgixsql
+cobc -x -I/usr/share/gixsql/copy -I./fuentes/sql -I./fuentes/interface -I./fuentes/control -I./fuentes/tipos bankCOBOL.cbsql -L /usr/lib -lgixsql
 
 
 
