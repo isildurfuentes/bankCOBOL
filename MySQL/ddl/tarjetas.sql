@@ -1,7 +1,7 @@
 CREATE TABLE `tarjetas` (
   `numero` bigint unsigned NOT NULL,
   `idCliente` int unsigned NOT NULL,
-  `idCuentaCorriente` int unsigned NOT NULL,
+  `idCuentaCorriente` varchar(24) NOT NULL,
   `CC` int unsigned NOT NULL,
   `fechaCaducidad` date NOT NULL,
   `limiteMensual` float DEFAULT '1000',
