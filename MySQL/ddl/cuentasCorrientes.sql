@@ -2,9 +2,9 @@ CREATE TABLE `cuentasCorrientes` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `idTipoMovimiento` int NOT NULL,
   `fechaMovimiento` date NOT NULL,
-  `importe` decimal(10,0) NOT NULL,
+  `importe` decimal(10,2) NOT NULL,
   `comentario` varchar(45) DEFAULT NULL,
-  `saldoActual` date NOT NULL,
+  `saldoActual` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `tipoMovimiento` (`idTipoMovimiento`),
   CONSTRAINT `cuentasCorrientes_tiposMovimiento_FK` FOREIGN KEY (`id`) REFERENCES `tiposMovimiento` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
